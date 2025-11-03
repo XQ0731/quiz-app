@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>¶şÊ®½ìËÄÖĞÈ«»áÖªÊ¶´ğÌâ - ³É¼¨¹²Ïí°æ</title>
+    <title>äºŒåå±Šå››ä¸­å…¨ä¼šçŸ¥è¯†ç­”é¢˜ - æˆç»©å…±äº«ç‰ˆ</title>
     <style>
       * {
         margin: 0;
@@ -110,7 +110,7 @@
         background: #28a745;
       }
 
-      /* ±íµ¥ÑùÊ½ */
+      /* è¡¨å•æ ·å¼ */
       .form-group {
         margin-bottom: 20px;
         text-align: left;
@@ -261,7 +261,7 @@
         background: #f8f9fa;
       }
 
-      /* ³É¼¨ÅÅĞĞ°ñÑùÊ½ */
+      /* æˆç»©æ’è¡Œæ¦œæ ·å¼ */
       .scoreboard {
         margin: 20px 0;
         max-height: 400px;
@@ -346,132 +346,132 @@
   <body>
     <div class="container">
       <header>
-        <h1>¶şÊ®½ìËÄÖĞÈ«»áÖªÊ¶´ğÌâ</h1>
+        <h1>äºŒåå±Šå››ä¸­å…¨ä¼šçŸ¥è¯†ç­”é¢˜</h1>
         <div class="subtitle">
-          ÉîÈëÑ§Ï°Áì»áÈ«»á¾«Éñ °ÑÎÕ"Ê®ÎåÎå"¹æ»®·½Ïò - ³É¼¨¹²Ïí°æ
+          æ·±å…¥å­¦ä¹ é¢†ä¼šå…¨ä¼šç²¾ç¥ æŠŠæ¡"åäº”äº”"è§„åˆ’æ–¹å‘ - æˆç»©å…±äº«ç‰ˆ
         </div>
-        <div class="flag">??</div>
+        <div class="flag">ğŸ‡¨ğŸ‡³</div>
       </header>
 
       <div class="content">
-        <!-- »¶Ó­½çÃæ -->
+        <!-- æ¬¢è¿ç•Œé¢ -->
         <div id="welcomeScreen" class="screen active">
           <div class="welcome-screen">
-            <h2>»¶Ó­²Î¼Ó¶şÊ®½ìËÄÖĞÈ«»áÖªÊ¶²âÊÔ</h2>
+            <h2>æ¬¢è¿å‚åŠ äºŒåå±Šå››ä¸­å…¨ä¼šçŸ¥è¯†æµ‹è¯•</h2>
             <p>
-              ±¾´Î²âÊÔ°üº¬10µÀ¹ØÓÚ¶şÊ®½ìËÄÖĞÈ«»áµÄÖØÒªÖªÊ¶µã£¬´ğÌâºó³É¼¨½«ÊµÊ±¹²Ïíµ½ÅÅĞĞ°ñ¡£
+              æœ¬æ¬¡æµ‹è¯•åŒ…å«10é“å…³äºäºŒåå±Šå››ä¸­å…¨ä¼šçš„é‡è¦çŸ¥è¯†ç‚¹ï¼Œç­”é¢˜åæˆç»©å°†å®æ—¶å…±äº«åˆ°æ’è¡Œæ¦œã€‚
             </p>
             <div class="btn-group">
               <button
                 class="btn primary"
                 onclick="showScreen('userInfoScreen')"
               >
-                ¿ªÊ¼´ğÌâ
+                å¼€å§‹ç­”é¢˜
               </button>
               <button class="btn success" onclick="loadScoreboard()">
-                ²é¿´³É¼¨ÅÅĞĞ°ñ
+                æŸ¥çœ‹æˆç»©æ’è¡Œæ¦œ
               </button>
             </div>
           </div>
         </div>
 
-        <!-- ÓÃ»§ĞÅÏ¢½çÃæ -->
+        <!-- ç”¨æˆ·ä¿¡æ¯ç•Œé¢ -->
         <div id="userInfoScreen" class="screen">
           <div class="welcome-content">
-            <h2>ÇëÌîĞ´¸öÈËĞÅÏ¢</h2>
+            <h2>è¯·å¡«å†™ä¸ªäººä¿¡æ¯</h2>
             <form id="userInfoForm">
               <div class="form-group">
-                <label for="userName">ĞÕÃû£º</label>
+                <label for="userName">å§“åï¼š</label>
                 <input
                   type="text"
                   id="userName"
                   required
-                  placeholder="ÇëÊäÈëÄúµÄĞÕÃû"
+                  placeholder="è¯·è¾“å…¥æ‚¨çš„å§“å"
                 />
               </div>
               <div class="form-group">
-                <label for="userDepartment">µ¥Î»/²¿ÃÅ£º</label>
+                <label for="userDepartment">å•ä½/éƒ¨é—¨ï¼š</label>
                 <input
                   type="text"
                   id="userDepartment"
                   required
-                  placeholder="ÇëÊäÈëÄúµÄµ¥Î»»ò²¿ÃÅ"
+                  placeholder="è¯·è¾“å…¥æ‚¨çš„å•ä½æˆ–éƒ¨é—¨"
                 />
               </div>
-              <button type="submit" class="btn primary">¿ªÊ¼´ğÌâ</button>
+              <button type="submit" class="btn primary">å¼€å§‹ç­”é¢˜</button>
               <button
                 type="button"
                 class="btn secondary"
                 onclick="showScreen('welcomeScreen')"
               >
-                ·µ»Ø
+                è¿”å›
               </button>
             </form>
           </div>
         </div>
 
-        <!-- ´ğÌâ½çÃæ -->
+        <!-- ç­”é¢˜ç•Œé¢ -->
         <div id="quizScreen" class="screen">
-          <div class="question-number" id="questionNumber">ÌâÄ¿ 1/10</div>
-          <div class="question" id="question">ÎÊÌâ¼ÓÔØÖĞ...</div>
+          <div class="question-number" id="questionNumber">é¢˜ç›® 1/10</div>
+          <div class="question" id="question">é—®é¢˜åŠ è½½ä¸­...</div>
 
           <div class="options" id="options"></div>
 
           <div class="navigation">
-            <button class="btn secondary" id="prevBtn">ÉÏÒ»Ìâ</button>
+            <button class="btn secondary" id="prevBtn">ä¸Šä¸€é¢˜</button>
             <div class="progress">
               <span id="progressText">0/10</span>
               <div class="progress-bar">
                 <div class="progress-fill" id="progressFill"></div>
               </div>
             </div>
-            <button class="btn primary" id="nextBtn">ÏÂÒ»Ìâ</button>
+            <button class="btn primary" id="nextBtn">ä¸‹ä¸€é¢˜</button>
           </div>
         </div>
 
-        <!-- ½á¹û½çÃæ -->
+        <!-- ç»“æœç•Œé¢ -->
         <div id="resultScreen" class="screen">
           <div class="result-content">
             <div class="result-header">
-              <h2>´ğÌâÍê³É!</h2>
+              <h2>ç­”é¢˜å®Œæˆ!</h2>
               <div class="score" id="score">0/10</div>
             </div>
 
             <div class="stats">
               <div class="stat-item">
                 <div class="stat-value" id="correctCount">0</div>
-                <div class="stat-label">ÕıÈ·</div>
+                <div class="stat-label">æ­£ç¡®</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value" id="incorrectCount">0</div>
-                <div class="stat-label">´íÎó</div>
+                <div class="stat-label">é”™è¯¯</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value" id="percentage">0%</div>
-                <div class="stat-label">ÕıÈ·ÂÊ</div>
+                <div class="stat-label">æ­£ç¡®ç‡</div>
               </div>
             </div>
 
             <div class="feedback" id="feedback"></div>
 
             <div class="btn-group">
-              <button class="btn primary" id="restartBtn">ÖØĞÂ¿ªÊ¼</button>
+              <button class="btn primary" id="restartBtn">é‡æ–°å¼€å§‹</button>
               <button class="btn success" onclick="loadScoreboard()">
-                ²é¿´³É¼¨ÅÅĞĞ°ñ
+                æŸ¥çœ‹æˆç»©æ’è¡Œæ¦œ
               </button>
             </div>
           </div>
         </div>
 
-        <!-- ³É¼¨ÅÅĞĞ°ñ½çÃæ -->
+        <!-- æˆç»©æ’è¡Œæ¦œç•Œé¢ -->
         <div id="scoreboardScreen" class="screen">
           <div class="welcome-content">
-            <h2>³É¼¨ÅÅĞĞ°ñ</h2>
+            <h2>æˆç»©æ’è¡Œæ¦œ</h2>
             <div id="scoreboard" class="scoreboard">
-              <div class="loading">ÕıÔÚ¼ÓÔØ³É¼¨Êı¾İ...</div>
+              <div class="loading">æ­£åœ¨åŠ è½½æˆç»©æ•°æ®...</div>
             </div>
             <button class="btn primary" onclick="showScreen('welcomeScreen')">
-              ·µ»ØÊ×Ò³
+              è¿”å›é¦–é¡µ
             </button>
           </div>
         </div>
@@ -479,145 +479,145 @@
     </div>
 
     <script>
-      // ÅäÖÃĞÅÏ¢ - ĞèÒªÄúĞŞ¸ÄµÄ²¿·Ö
+      // é…ç½®ä¿¡æ¯ - éœ€è¦æ‚¨ä¿®æ”¹çš„éƒ¨åˆ†
       const CONFIG = {
-        GITHUB_TOKEN: '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', // Ìæ»»ÎªÄúµÄGitHubÁîÅÆ
-        REPO_OWNER: 'XQ0731', // Ìæ»»ÎªÄúµÄGitHubÓÃ»§Ãû
-        REPO_NAME: 'quiz-app', // Ìæ»»ÎªÄúµÄ²Ö¿âÃû
-        LABEL: '³É¼¨¼ÇÂ¼', // Issues±êÇ©
+        GITHUB_TOKEN: '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', // æ›¿æ¢ä¸ºæ‚¨çš„GitHubä»¤ç‰Œ
+        REPO_OWNER: 'XQ0731', // æ›¿æ¢ä¸ºæ‚¨çš„GitHubç”¨æˆ·å
+        REPO_NAME: 'quiz-app', // æ›¿æ¢ä¸ºæ‚¨çš„ä»“åº“å
+        LABEL: 'æˆç»©è®°å½•', // Issuesæ ‡ç­¾
       };
 
-      // ÓÃ»§ĞÅÏ¢
+      // ç”¨æˆ·ä¿¡æ¯
       let userInfo = {
         name: '',
         department: '',
         timestamp: '',
       };
 
-      // ÌâÄ¿Êı¾İ
+      // é¢˜ç›®æ•°æ®
       const questions = [
         {
-          question: '¶şÊ®½ìËÄÖĞÈ«»áÓÚºÎÊ±¾ÙĞĞ£¿',
+          question: 'äºŒåå±Šå››ä¸­å…¨ä¼šäºä½•æ—¶ä¸¾è¡Œï¼Ÿ',
           options: [
-            '2025Äê10ÔÂ20ÈÕÖÁ23ÈÕ',
-            '2025Äê10ÔÂ21ÈÕÖÁ24ÈÕ',
-            '2025Äê10ÔÂ19ÈÕÖÁ22ÈÕ',
-            '2025Äê10ÔÂ22ÈÕÖÁ25ÈÕ',
+            '2025å¹´10æœˆ20æ—¥è‡³23æ—¥',
+            '2025å¹´10æœˆ21æ—¥è‡³24æ—¥',
+            '2025å¹´10æœˆ19æ—¥è‡³22æ—¥',
+            '2025å¹´10æœˆ22æ—¥è‡³25æ—¥',
           ],
           correct: 0,
-          explanation: '¶şÊ®½ìËÄÖĞÈ«»áÓÚ2025Äê10ÔÂ20ÈÕÖÁ23ÈÕÔÚ±±¾©¾ÙĞĞ¡£',
+          explanation: 'äºŒåå±Šå››ä¸­å…¨ä¼šäº2025å¹´10æœˆ20æ—¥è‡³23æ—¥åœ¨åŒ—äº¬ä¸¾è¡Œã€‚',
         },
         {
-          question: 'È«»áÉóÒéÍ¨¹ıÁËÏÂÁĞÄÄÏîÖØÒªÎÄ¼ş£¿',
+          question: 'å…¨ä¼šå®¡è®®é€šè¿‡äº†ä¸‹åˆ—å“ªé¡¹é‡è¦æ–‡ä»¶ï¼Ÿ',
           options: [
-            '¡¶ÖĞ¹²ÖĞÑë¹ØÓÚÖÆ¶¨¹úÃñ¾­¼ÃºÍÉç»á·¢Õ¹µÚÊ®ËÄ¸öÎåÄê¹æ»®µÄ½¨Òé¡·',
-            '¡¶ÖĞ¹²ÖĞÑë¹ØÓÚÖÆ¶¨¹úÃñ¾­¼ÃºÍÉç»á·¢Õ¹µÚÊ®Îå¸öÎåÄê¹æ»®µÄ½¨Òé¡·',
-            '¡¶ÖĞ¹²ÖĞÑë¹ØÓÚÈ«ÃæÍÆ½øÏç´åÕñĞËµÄ½¨Òé¡·',
-            '¡¶ÖĞ¹²ÖĞÑë¹ØÓÚÉî»¯ÎÄ»¯ÌåÖÆ¸Ä¸ïµÄ½¨Òé¡·',
+            'ã€Šä¸­å…±ä¸­å¤®å…³äºåˆ¶å®šå›½æ°‘ç»æµå’Œç¤¾ä¼šå‘å±•ç¬¬åå››ä¸ªäº”å¹´è§„åˆ’çš„å»ºè®®ã€‹',
+            'ã€Šä¸­å…±ä¸­å¤®å…³äºåˆ¶å®šå›½æ°‘ç»æµå’Œç¤¾ä¼šå‘å±•ç¬¬åäº”ä¸ªäº”å¹´è§„åˆ’çš„å»ºè®®ã€‹',
+            'ã€Šä¸­å…±ä¸­å¤®å…³äºå…¨é¢æ¨è¿›ä¹¡æ‘æŒ¯å…´çš„å»ºè®®ã€‹',
+            'ã€Šä¸­å…±ä¸­å¤®å…³äºæ·±åŒ–æ–‡åŒ–ä½“åˆ¶æ”¹é©çš„å»ºè®®ã€‹',
           ],
           correct: 1,
           explanation:
-            'È«»áÉóÒéÍ¨¹ıÁË¡¶ÖĞ¹²ÖĞÑë¹ØÓÚÖÆ¶¨¹úÃñ¾­¼ÃºÍÉç»á·¢Õ¹µÚÊ®Îå¸öÎåÄê¹æ»®µÄ½¨Òé¡·¡£',
+            'å…¨ä¼šå®¡è®®é€šè¿‡äº†ã€Šä¸­å…±ä¸­å¤®å…³äºåˆ¶å®šå›½æ°‘ç»æµå’Œç¤¾ä¼šå‘å±•ç¬¬åäº”ä¸ªäº”å¹´è§„åˆ’çš„å»ºè®®ã€‹ã€‚',
         },
         {
-          question: '¡°Ê®ÎåÎå¡±Ê±ÆÚÔÚÉç»áÖ÷ÒåÏÖ´ú»¯½ø³ÌÖĞ¾ßÓĞÔõÑùµÄµØÎ»£¿',
+          question: 'â€œåäº”äº”â€æ—¶æœŸåœ¨ç¤¾ä¼šä¸»ä¹‰ç°ä»£åŒ–è¿›ç¨‹ä¸­å…·æœ‰æ€æ ·çš„åœ°ä½ï¼Ÿ',
           options: [
-            '³õ²½Ì½Ë÷½×¶Î',
-            'È«ÃæÊÕ¹Ù½×¶Î',
-            '³ĞÇ°ÆôºóµÄ¹Ø¼üÊ±ÆÚ',
-            'È«ÃæÊµÏÖ½×¶Î',
+            'åˆæ­¥æ¢ç´¢é˜¶æ®µ',
+            'å…¨é¢æ”¶å®˜é˜¶æ®µ',
+            'æ‰¿å‰å¯åçš„å…³é”®æ—¶æœŸ',
+            'å…¨é¢å®ç°é˜¶æ®µ',
           ],
           correct: 2,
           explanation:
-            '¡°Ê®ÎåÎå¡±Ê±ÆÚÔÚÉç»áÖ÷ÒåÏÖ´ú»¯½ø³ÌÖĞ¾ßÓĞ³ĞÇ°ÆôºóµÄ¹Ø¼üµØÎ»¡£',
+            'â€œåäº”äº”â€æ—¶æœŸåœ¨ç¤¾ä¼šä¸»ä¹‰ç°ä»£åŒ–è¿›ç¨‹ä¸­å…·æœ‰æ‰¿å‰å¯åçš„å…³é”®åœ°ä½ã€‚',
         },
         {
-          question: 'ÏÂÁĞÄÄÏî²»ÊôÓÚ¡°Ê®ÎåÎå¡±Ê±ÆÚ¾­¼ÃÉç»á·¢Õ¹±ØĞë×ñÑ­µÄÔ­Ôò£¿',
+          question: 'ä¸‹åˆ—å“ªé¡¹ä¸å±äºâ€œåäº”äº”â€æ—¶æœŸç»æµç¤¾ä¼šå‘å±•å¿…é¡»éµå¾ªçš„åŸåˆ™ï¼Ÿ',
           options: [
-            '¼á³Öµ³µÄÈ«ÃæÁìµ¼',
-            '¼á³Ö¸ßËÙÔö³¤',
-            '¼á³ÖÈËÃñÖÁÉÏ',
-            '¼á³Ö¸ßÖÊÁ¿·¢Õ¹',
+            'åšæŒå…šçš„å…¨é¢é¢†å¯¼',
+            'åšæŒé«˜é€Ÿå¢é•¿',
+            'åšæŒäººæ°‘è‡³ä¸Š',
+            'åšæŒé«˜è´¨é‡å‘å±•',
           ],
           correct: 1,
-          explanation: '¡°Ê®ÎåÎå¡±Ê±ÆÚÇ¿µ÷¸ßÖÊÁ¿·¢Õ¹£¬¶ø·Ç¼òµ¥×·Çó¸ßËÙÔö³¤¡£',
+          explanation: 'â€œåäº”äº”â€æ—¶æœŸå¼ºè°ƒé«˜è´¨é‡å‘å±•ï¼Œè€Œéç®€å•è¿½æ±‚é«˜é€Ÿå¢é•¿ã€‚',
         },
         {
-          question: 'È«»áÌá³öÒª¼Ó¿ì½¨ÉèÄÄĞ©¡°Ç¿¹ú¡±£¿',
+          question: 'å…¨ä¼šæå‡ºè¦åŠ å¿«å»ºè®¾å“ªäº›â€œå¼ºå›½â€ï¼Ÿ',
           options: [
-            'ÖÆÔìÇ¿¹ú¡¢ÖÊÁ¿Ç¿¹ú¡¢º½ÌìÇ¿¹ú¡¢½»Í¨Ç¿¹ú¡¢ÍøÂçÇ¿¹ú',
-            '¹¤ÒµÇ¿¹ú¡¢Å©ÒµÇ¿¹ú¡¢¿Æ¼¼Ç¿¹ú¡¢ÎÄ»¯Ç¿¹ú¡¢¾üÊÂÇ¿¹ú',
-            'º£ÑóÇ¿¹ú¡¢ÄÜÔ´Ç¿¹ú¡¢½ğÈÚÇ¿¹ú¡¢½ÌÓıÇ¿¹ú¡¢ÌåÓıÇ¿¹ú',
-            'ĞÅÏ¢Ç¿¹ú¡¢ÉúÌ¬Ç¿¹ú¡¢·¨ÖÎÇ¿¹ú¡¢½¡¿µÇ¿¹ú¡¢Æ½°²Ç¿¹ú',
+            'åˆ¶é€ å¼ºå›½ã€è´¨é‡å¼ºå›½ã€èˆªå¤©å¼ºå›½ã€äº¤é€šå¼ºå›½ã€ç½‘ç»œå¼ºå›½',
+            'å·¥ä¸šå¼ºå›½ã€å†œä¸šå¼ºå›½ã€ç§‘æŠ€å¼ºå›½ã€æ–‡åŒ–å¼ºå›½ã€å†›äº‹å¼ºå›½',
+            'æµ·æ´‹å¼ºå›½ã€èƒ½æºå¼ºå›½ã€é‡‘èå¼ºå›½ã€æ•™è‚²å¼ºå›½ã€ä½“è‚²å¼ºå›½',
+            'ä¿¡æ¯å¼ºå›½ã€ç”Ÿæ€å¼ºå›½ã€æ³•æ²»å¼ºå›½ã€å¥åº·å¼ºå›½ã€å¹³å®‰å¼ºå›½',
           ],
           correct: 0,
           explanation:
-            'È«»áÌá³ö¼Ó¿ì½¨ÉèÖÆÔìÇ¿¹ú¡¢ÖÊÁ¿Ç¿¹ú¡¢º½ÌìÇ¿¹ú¡¢½»Í¨Ç¿¹ú¡¢ÍøÂçÇ¿¹ú¡£',
+            'å…¨ä¼šæå‡ºåŠ å¿«å»ºè®¾åˆ¶é€ å¼ºå›½ã€è´¨é‡å¼ºå›½ã€èˆªå¤©å¼ºå›½ã€äº¤é€šå¼ºå›½ã€ç½‘ç»œå¼ºå›½ã€‚',
         },
         {
-          question: 'È«»áÇ¿µ÷Òª¼Ó¿ì¹¹½¨Ê²Ã´ÑùµÄ¾­¼ÃÌåÖÆ£¿',
+          question: 'å…¨ä¼šå¼ºè°ƒè¦åŠ å¿«æ„å»ºä»€ä¹ˆæ ·çš„ç»æµä½“åˆ¶ï¼Ÿ',
           options: [
-            '¼Æ»®¾­¼ÃÌåÖÆ',
-            '×ÔÓÉÊĞ³¡¾­¼ÃÌåÖÆ',
-            '¸ßË®Æ½Éç»áÖ÷ÒåÊĞ³¡¾­¼ÃÌåÖÆ',
-            '»ìºÏËùÓĞÖÆ¾­¼ÃÌåÖÆ',
+            'è®¡åˆ’ç»æµä½“åˆ¶',
+            'è‡ªç”±å¸‚åœºç»æµä½“åˆ¶',
+            'é«˜æ°´å¹³ç¤¾ä¼šä¸»ä¹‰å¸‚åœºç»æµä½“åˆ¶',
+            'æ··åˆæ‰€æœ‰åˆ¶ç»æµä½“åˆ¶',
           ],
           correct: 2,
-          explanation: 'È«»áÇ¿µ÷Òª¼Ó¿ì¹¹½¨¸ßË®Æ½Éç»áÖ÷ÒåÊĞ³¡¾­¼ÃÌåÖÆ¡£',
+          explanation: 'å…¨ä¼šå¼ºè°ƒè¦åŠ å¿«æ„å»ºé«˜æ°´å¹³ç¤¾ä¼šä¸»ä¹‰å¸‚åœºç»æµä½“åˆ¶ã€‚',
         },
         {
-          question: 'È«»áÌá³öÒªÔúÊµÍÆ½øÄÄÏîÖØ´óÕ½ÂÔÒÔ´Ù½øÅ©´å·¢Õ¹£¿',
+          question: 'å…¨ä¼šæå‡ºè¦æ‰å®æ¨è¿›å“ªé¡¹é‡å¤§æˆ˜ç•¥ä»¥ä¿ƒè¿›å†œæ‘å‘å±•ï¼Ÿ',
           options: [
-            '³ÇÊĞÓÅÏÈ·¢Õ¹',
-            'Ïç´åÈ«ÃæÕñĞË',
-            'Å©Òµµ¥Ò»»¯·¢Õ¹',
-            'Å©´åÈË¿ÚÍâÇ¨',
+            'åŸå¸‚ä¼˜å…ˆå‘å±•',
+            'ä¹¡æ‘å…¨é¢æŒ¯å…´',
+            'å†œä¸šå•ä¸€åŒ–å‘å±•',
+            'å†œæ‘äººå£å¤–è¿',
           ],
           correct: 1,
-          explanation: 'È«»áÌá³öÔúÊµÍÆ½øÏç´åÈ«ÃæÕñĞËÕ½ÂÔ¡£',
+          explanation: 'å…¨ä¼šæå‡ºæ‰å®æ¨è¿›ä¹¡æ‘å…¨é¢æŒ¯å…´æˆ˜ç•¥ã€‚',
         },
         {
-          question: 'ÒÔÏÂÄÄÏîÊÇ¡°Ê®ÎåÎå¡±Ê±ÆÚ¾­¼ÃÉç»á·¢Õ¹µÄÖØÒªÄ¿±êÖ®Ò»£¿',
+          question: 'ä»¥ä¸‹å“ªé¡¹æ˜¯â€œåäº”äº”â€æ—¶æœŸç»æµç¤¾ä¼šå‘å±•çš„é‡è¦ç›®æ ‡ä¹‹ä¸€ï¼Ÿ',
           options: [
-            'ÊµÏÖ¸ßËÙÔö³¤',
-            '¿Æ¼¼×ÔÁ¢×ÔÇ¿Ë®Æ½´ó·ùÌá¸ß',
-            'È«ÃæÈ¡Ïû¶ÔÍâ¿ª·Å',
-            '¼õÉÙÉç»á±£ÕÏÍ¶Èë',
+            'å®ç°é«˜é€Ÿå¢é•¿',
+            'ç§‘æŠ€è‡ªç«‹è‡ªå¼ºæ°´å¹³å¤§å¹…æé«˜',
+            'å…¨é¢å–æ¶ˆå¯¹å¤–å¼€æ”¾',
+            'å‡å°‘ç¤¾ä¼šä¿éšœæŠ•å…¥',
           ],
           correct: 1,
-          explanation: '¡°Ê®ÎåÎå¡±Ê±ÆÚµÄÖØÒªÄ¿±êÖ®Ò»ÊÇ¿Æ¼¼×ÔÁ¢×ÔÇ¿Ë®Æ½´ó·ùÌá¸ß¡£',
+          explanation: 'â€œåäº”äº”â€æ—¶æœŸçš„é‡è¦ç›®æ ‡ä¹‹ä¸€æ˜¯ç§‘æŠ€è‡ªç«‹è‡ªå¼ºæ°´å¹³å¤§å¹…æé«˜ã€‚',
         },
         {
-          question: 'È«»áÇ¿µ÷ÒªÀÎ¹ÌÊ÷Á¢ºÍ¼ùĞĞÄÄÒ»ÀíÄîÀ´ÍÆ¶¯ÂÌÉ«×ªĞÍ£¿',
+          question: 'å…¨ä¼šå¼ºè°ƒè¦ç‰¢å›ºæ ‘ç«‹å’Œè·µè¡Œå“ªä¸€ç†å¿µæ¥æ¨åŠ¨ç»¿è‰²è½¬å‹ï¼Ÿ',
           options: [
-            '·¢Õ¹ÊÇÓ²µÀÀí',
-            'ÂÌË®ÇàÉ½¾ÍÊÇ½ğÉ½ÒøÉ½',
-            'ÏÈÎÛÈ¾ºóÖÎÀí',
-            '×ÊÔ´ÎŞÏŞÀûÓÃ',
+            'å‘å±•æ˜¯ç¡¬é“ç†',
+            'ç»¿æ°´é’å±±å°±æ˜¯é‡‘å±±é“¶å±±',
+            'å…ˆæ±¡æŸ“åæ²»ç†',
+            'èµ„æºæ— é™åˆ©ç”¨',
           ],
           correct: 1,
-          explanation: 'È«»áÇ¿µ÷ÀÎ¹ÌÊ÷Á¢ºÍ¼ùĞĞÂÌË®ÇàÉ½¾ÍÊÇ½ğÉ½ÒøÉ½µÄÀíÄî¡£',
+          explanation: 'å…¨ä¼šå¼ºè°ƒç‰¢å›ºæ ‘ç«‹å’Œè·µè¡Œç»¿æ°´é’å±±å°±æ˜¯é‡‘å±±é“¶å±±çš„ç†å¿µã€‚',
         },
         {
-          question: 'È«»áºÅÕÙÈ«µ³È«¾üÈ«¹ú¸÷×åÈËÃñÍÅ½áÔÚË­ÖÜÎ§£¿',
+          question: 'å…¨ä¼šå·å¬å…¨å…šå…¨å†›å…¨å›½å„æ—äººæ°‘å›¢ç»“åœ¨è°å‘¨å›´ï¼Ÿ',
           options: [
-            'µ³ÖĞÑë',
-            'ÖĞÑë¾üÎ¯',
-            'ÒÔÏ°½üÆ½Í¬Ö¾ÎªºËĞÄµÄµ³ÖĞÑë',
-            'È«¹úÈËÃñ´ú±í´ó»á',
+            'å…šä¸­å¤®',
+            'ä¸­å¤®å†›å§”',
+            'ä»¥ä¹ è¿‘å¹³åŒå¿—ä¸ºæ ¸å¿ƒçš„å…šä¸­å¤®',
+            'å…¨å›½äººæ°‘ä»£è¡¨å¤§ä¼š',
           ],
           correct: 2,
           explanation:
-            'È«»áºÅÕÙÈ«µ³È«¾üÈ«¹ú¸÷×åÈËÃñÍÅ½áÔÚÒÔÏ°½üÆ½Í¬Ö¾ÎªºËĞÄµÄµ³ÖĞÑëÖÜÎ§¡£',
+            'å…¨ä¼šå·å¬å…¨å…šå…¨å†›å…¨å›½å„æ—äººæ°‘å›¢ç»“åœ¨ä»¥ä¹ è¿‘å¹³åŒå¿—ä¸ºæ ¸å¿ƒçš„å…šä¸­å¤®å‘¨å›´ã€‚',
         },
       ];
 
       let currentQuestion = 0;
       let userAnswers = new Array(questions.length).fill(null);
 
-      // ³õÊ¼»¯
+      // åˆå§‹åŒ–
       document.addEventListener('DOMContentLoaded', function () {
-        // ÓÃ»§ĞÅÏ¢±íµ¥Ìá½»
+        // ç”¨æˆ·ä¿¡æ¯è¡¨å•æäº¤
         document
           .getElementById('userInfoForm')
           .addEventListener('submit', function (e) {
@@ -625,7 +625,7 @@
             startQuizWithUserInfo();
           });
 
-        // ´ğÌâ°´Å¥ÊÂ¼ş
+        // ç­”é¢˜æŒ‰é’®äº‹ä»¶
         document
           .getElementById('startBtn')
           ?.addEventListener('click', () => showScreen('userInfoScreen'));
@@ -640,7 +640,7 @@
           .addEventListener('click', restartQuiz);
       });
 
-      // ÏÔÊ¾Ö¸¶¨ÆÁÄ»
+      // æ˜¾ç¤ºæŒ‡å®šå±å¹•
       function showScreen(screenId) {
         document.querySelectorAll('.screen').forEach((screen) => {
           screen.classList.remove('active');
@@ -648,13 +648,13 @@
         document.getElementById(screenId).classList.add('active');
       }
 
-      // ¿ªÊ¼´ğÌâ£¨´øÓÃ»§ĞÅÏ¢£©
+      // å¼€å§‹ç­”é¢˜ï¼ˆå¸¦ç”¨æˆ·ä¿¡æ¯ï¼‰
       function startQuizWithUserInfo() {
         const name = document.getElementById('userName').value;
         const department = document.getElementById('userDepartment').value;
 
         if (!name || !department) {
-          alert('ÇëÌîĞ´ÍêÕûĞÅÏ¢');
+          alert('è¯·å¡«å†™å®Œæ•´ä¿¡æ¯');
           return;
         }
 
@@ -668,10 +668,10 @@
         showQuestion();
       }
 
-      // ÏÔÊ¾ÌâÄ¿
+      // æ˜¾ç¤ºé¢˜ç›®
       function showQuestion() {
         const question = questions[currentQuestion];
-        document.getElementById('questionNumber').textContent = `ÌâÄ¿ ${
+        document.getElementById('questionNumber').textContent = `é¢˜ç›® ${
           currentQuestion + 1
         }/${questions.length}`;
         document.getElementById('question').textContent = question.question;
@@ -702,16 +702,16 @@
         updateProgress();
         document.getElementById('prevBtn').disabled = currentQuestion === 0;
         document.getElementById('nextBtn').textContent =
-          currentQuestion === questions.length - 1 ? 'Ìá½»´ğ°¸' : 'ÏÂÒ»Ìâ';
+          currentQuestion === questions.length - 1 ? 'æäº¤ç­”æ¡ˆ' : 'ä¸‹ä¸€é¢˜';
       }
 
-      // Ñ¡ÔñÑ¡Ïî
+      // é€‰æ‹©é€‰é¡¹
       function selectOption(index) {
         userAnswers[currentQuestion] = index;
         showQuestion();
       }
 
-      // ¸üĞÂ½ø¶È
+      // æ›´æ–°è¿›åº¦
       function updateProgress() {
         const answeredCount = userAnswers.filter(
           (answer) => answer !== null
@@ -723,7 +723,7 @@
         document.getElementById('progressFill').style.width = `${progress}%`;
       }
 
-      // ÉÏÒ»Ìâ
+      // ä¸Šä¸€é¢˜
       function prevQuestion() {
         if (currentQuestion > 0) {
           currentQuestion--;
@@ -731,7 +731,7 @@
         }
       }
 
-      // ÏÂÒ»Ìâ
+      // ä¸‹ä¸€é¢˜
       function nextQuestion() {
         if (currentQuestion < questions.length - 1) {
           currentQuestion++;
@@ -741,7 +741,7 @@
         }
       }
 
-      // ÏÔÊ¾½á¹û
+      // æ˜¾ç¤ºç»“æœ
       function showResults() {
         showScreen('resultScreen');
 
@@ -756,7 +756,7 @@
         const score = correctCount;
         const percentage = Math.round((correctCount / totalQuestions) * 100);
 
-        // ¸üĞÂÏÔÊ¾
+        // æ›´æ–°æ˜¾ç¤º
         document.getElementById(
           'score'
         ).textContent = `${score}/${totalQuestions}`;
@@ -765,23 +765,23 @@
           totalQuestions - correctCount;
         document.getElementById('percentage').textContent = `${percentage}%`;
 
-        // Ìá½»³É¼¨µ½GitHub
+        // æäº¤æˆç»©åˆ°GitHub
         submitScoreToGitHub(score, correctCount, totalQuestions, percentage);
 
-        // ÏÔÊ¾·´À¡
+        // æ˜¾ç¤ºåé¦ˆ
         let feedback = '';
         if (percentage >= 90)
-          feedback = 'Ì«°ôÁË£¡Äú¶Ô¶şÊ®½ìËÄÖĞÈ«»á¾«ÉñÓĞÉîÈëµÄÀí½âºÍÕÆÎÕ£¡';
+          feedback = 'å¤ªæ£’äº†ï¼æ‚¨å¯¹äºŒåå±Šå››ä¸­å…¨ä¼šç²¾ç¥æœ‰æ·±å…¥çš„ç†è§£å’ŒæŒæ¡ï¼';
         else if (percentage >= 70)
-          feedback = '×öµÃ²»´í£¡Äú¶ÔÈ«»áÖ÷ÒªÄÚÈİÓĞ½ÏºÃµÄÀí½â¡£';
+          feedback = 'åšå¾—ä¸é”™ï¼æ‚¨å¯¹å…¨ä¼šä¸»è¦å†…å®¹æœ‰è¾ƒå¥½çš„ç†è§£ã€‚';
         else if (percentage >= 50)
-          feedback = '»¹¿ÉÒÔ£¬µ«»¹ĞèÒª½øÒ»²½Ñ§Ï°È«»á¾«Éñ¡£';
-        else feedback = 'ĞèÒª¼ÓÇ¿Ñ§Ï°£¬½¨Òé×ĞÏ¸ÑĞ¶ÁÈ«»á¹«±¨ºÍÏà¹ØÎÄ¼ş¡£';
+          feedback = 'è¿˜å¯ä»¥ï¼Œä½†è¿˜éœ€è¦è¿›ä¸€æ­¥å­¦ä¹ å…¨ä¼šç²¾ç¥ã€‚';
+        else feedback = 'éœ€è¦åŠ å¼ºå­¦ä¹ ï¼Œå»ºè®®ä»”ç»†ç ”è¯»å…¨ä¼šå…¬æŠ¥å’Œç›¸å…³æ–‡ä»¶ã€‚';
 
         document.getElementById('feedback').textContent = feedback;
       }
 
-      // Ìá½»³É¼¨µ½GitHub Issues
+      // æäº¤æˆç»©åˆ°GitHub Issues
       async function submitScoreToGitHub(
         score,
         correctCount,
@@ -798,21 +798,21 @@
           percentage: percentage,
         };
 
-        const issueTitle = `³É¼¨¼ÇÂ¼ - ${scoreData.name} - ${scoreData.percentage}%`;
+        const issueTitle = `æˆç»©è®°å½• - ${scoreData.name} - ${scoreData.percentage}%`;
         const issueBody = `
-### ´ğÌâÈËĞÅÏ¢
-- **ĞÕÃû**: ${scoreData.name}
-- **µ¥Î»**: ${scoreData.department}
-- **µÃ·Ö**: ${scoreData.score}
-- **ÕıÈ·ÂÊ**: ${scoreData.percentage}%
-- **´ğÌâÊ±¼ä**: ${scoreData.timestamp}
+### ç­”é¢˜äººä¿¡æ¯
+- **å§“å**: ${scoreData.name}
+- **å•ä½**: ${scoreData.department}
+- **å¾—åˆ†**: ${scoreData.score}
+- **æ­£ç¡®ç‡**: ${scoreData.percentage}%
+- **ç­”é¢˜æ—¶é—´**: ${scoreData.timestamp}
 
-### ÏêÏ¸³É¼¨
-- ÕıÈ·ÌâÊı: ${scoreData.correctCount}
-- ×ÜÌâÊı: ${scoreData.totalQuestions}
-- µÃ·Ö: ${scoreData.score}
+### è¯¦ç»†æˆç»©
+- æ­£ç¡®é¢˜æ•°: ${scoreData.correctCount}
+- æ€»é¢˜æ•°: ${scoreData.totalQuestions}
+- å¾—åˆ†: ${scoreData.score}
 
-*´Ë¼ÇÂ¼ÓÉ´ğÌâÏµÍ³×Ô¶¯Éú³É*
+*æ­¤è®°å½•ç”±ç­”é¢˜ç³»ç»Ÿè‡ªåŠ¨ç”Ÿæˆ*
             `;
 
         try {
@@ -834,23 +834,23 @@
           );
 
           if (response.ok) {
-            console.log('³É¼¨ÒÑ³É¹¦Ìá½»µ½GitHub');
+            console.log('æˆç»©å·²æˆåŠŸæäº¤åˆ°GitHub');
           } else {
-            throw new Error('Ìá½»Ê§°Ü');
+            throw new Error('æäº¤å¤±è´¥');
           }
         } catch (error) {
-          console.error('Ìá½»µ½GitHubÊ§°Ü:', error);
-          // ±¸ÓÃ·½°¸£º±£´æµ½±¾µØ´æ´¢
+          console.error('æäº¤åˆ°GitHubå¤±è´¥:', error);
+          // å¤‡ç”¨æ–¹æ¡ˆï¼šä¿å­˜åˆ°æœ¬åœ°å­˜å‚¨
           saveToLocalStorage(scoreData);
         }
       }
 
-      // ´ÓGitHub Issues»ñÈ¡³É¼¨Êı¾İ
+      // ä»GitHub Issuesè·å–æˆç»©æ•°æ®
       async function loadScoreboard() {
         showScreen('scoreboardScreen');
         const scoreboardElement = document.getElementById('scoreboard');
         scoreboardElement.innerHTML =
-          '<div class="loading">ÕıÔÚ´ÓGitHub¼ÓÔØ³É¼¨Êı¾İ...</div>';
+          '<div class="loading">æ­£åœ¨ä»GitHubåŠ è½½æˆç»©æ•°æ®...</div>';
 
         try {
           const response = await fetch(
@@ -858,7 +858,7 @@
           );
 
           if (!response.ok) {
-            throw new Error('ÎŞ·¨¼ÓÔØ³É¼¨Êı¾İ');
+            throw new Error('æ— æ³•åŠ è½½æˆç»©æ•°æ®');
           }
 
           const issues = await response.json();
@@ -866,47 +866,47 @@
 
           displayScoreboard(scores);
         } catch (error) {
-          console.error('¼ÓÔØ³É¼¨Êı¾İÊ§°Ü:', error);
-          // ±¸ÓÃ·½°¸£º´Ó±¾µØ´æ´¢¼ÓÔØ
+          console.error('åŠ è½½æˆç»©æ•°æ®å¤±è´¥:', error);
+          // å¤‡ç”¨æ–¹æ¡ˆï¼šä»æœ¬åœ°å­˜å‚¨åŠ è½½
           loadFromLocalStorage();
         }
       }
 
-      // ´ÓIssues½âÎö³É¼¨Êı¾İ
+      // ä»Issuesè§£ææˆç»©æ•°æ®
       function parseScoresFromIssues(issues) {
         const scores = [];
 
         issues.forEach((issue) => {
           const body = issue.body;
-          const nameMatch = body.match(/\*\*ĞÕÃû\*\*: (.+)/);
-          const departmentMatch = body.match(/\*\*µ¥Î»\*\*: (.+)/);
-          const scoreMatch = body.match(/\*\*µÃ·Ö\*\*: (.+)/);
-          const percentageMatch = body.match(/\*\*ÕıÈ·ÂÊ\*\*: (\d+)%/);
-          const timestampMatch = body.match(/\*\*´ğÌâÊ±¼ä\*\*: (.+)/);
+          const nameMatch = body.match(/\*\*å§“å\*\*: (.+)/);
+          const departmentMatch = body.match(/\*\*å•ä½\*\*: (.+)/);
+          const scoreMatch = body.match(/\*\*å¾—åˆ†\*\*: (.+)/);
+          const percentageMatch = body.match(/\*\*æ­£ç¡®ç‡\*\*: (\d+)%/);
+          const timestampMatch = body.match(/\*\*ç­”é¢˜æ—¶é—´\*\*: (.+)/);
 
           if (nameMatch && percentageMatch) {
             scores.push({
               name: nameMatch[1],
-              department: departmentMatch ? departmentMatch[1] : 'Î´Öª',
+              department: departmentMatch ? departmentMatch[1] : 'æœªçŸ¥',
               score: scoreMatch ? scoreMatch[1] : '0/10',
               percentage: parseInt(percentageMatch[1]),
-              timestamp: timestampMatch ? timestampMatch[1] : 'Î´ÖªÊ±¼ä',
+              timestamp: timestampMatch ? timestampMatch[1] : 'æœªçŸ¥æ—¶é—´',
               issueUrl: issue.html_url,
             });
           }
         });
 
-        // °´³É¼¨ÅÅĞò
+        // æŒ‰æˆç»©æ’åº
         return scores.sort((a, b) => b.percentage - a.percentage);
       }
 
-      // ÏÔÊ¾³É¼¨ÅÅĞĞ°ñ
+      // æ˜¾ç¤ºæˆç»©æ’è¡Œæ¦œ
       function displayScoreboard(scores) {
         const scoreboardElement = document.getElementById('scoreboard');
 
         if (scores.length === 0) {
           scoreboardElement.innerHTML =
-            '<div class="loading">ÔİÎŞ³É¼¨¼ÇÂ¼</div>';
+            '<div class="loading">æš‚æ— æˆç»©è®°å½•</div>';
           return;
         }
 
@@ -914,12 +914,12 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>ÅÅÃû</th>
-                            <th>ĞÕÃû</th>
-                            <th>µ¥Î»</th>
-                            <th>µÃ·Ö</th>
-                            <th>ÕıÈ·ÂÊ</th>
-                            <th>´ğÌâÊ±¼ä</th>
+                            <th>æ’å</th>
+                            <th>å§“å</th>
+                            <th>å•ä½</th>
+                            <th>å¾—åˆ†</th>
+                            <th>æ­£ç¡®ç‡</th>
+                            <th>ç­”é¢˜æ—¶é—´</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -943,14 +943,14 @@
                     </tbody>
                 </table>
                 <p style="text-align: center; margin-top: 15px; color: #666;">
-                    ¹² ${scores.length} Ìõ³É¼¨¼ÇÂ¼ | Êı¾İÊµÊ±¸üĞÂ
+                    å…± ${scores.length} æ¡æˆç»©è®°å½• | æ•°æ®å®æ—¶æ›´æ–°
                 </p>
             `;
 
         scoreboardElement.innerHTML = html;
       }
 
-      // ±¾µØ´æ´¢±¸ÓÃ·½°¸
+      // æœ¬åœ°å­˜å‚¨å¤‡ç”¨æ–¹æ¡ˆ
       function saveToLocalStorage(data) {
         let allScores = JSON.parse(localStorage.getItem('quizScores') || '[]');
         allScores.push(data);
@@ -966,7 +966,7 @@
         );
       }
 
-      // ÖØĞÂ¿ªÊ¼
+      // é‡æ–°å¼€å§‹
       function restartQuiz() {
         currentQuestion = 0;
         userAnswers = new Array(questions.length).fill(null);
