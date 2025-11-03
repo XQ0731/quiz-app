@@ -1,0 +1,22 @@
+{
+  "name": "二十届四中全会知识答题",
+  "short_name": "全会知识答题",
+  "description": "深入学习领会全会精神，把握十五五规划方向",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a2a6c",
+  "theme_color": "#1a2a6c",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
